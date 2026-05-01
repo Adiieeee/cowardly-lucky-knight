@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b31m7c8d7cn7q"]
+
+[ext_resource type="Script" uid="uid://dlaqyjh3cp5lr" path="res://scenes/proyektil_bos.gd" id="1_oy7gg"]
+[ext_resource type="Texture2D" uid="uid://sts2kxgvieb0" path="res://assets/SATYR_sprite_sheet/proyektil.png" id="1_uactg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oy7gg"]
+size = Vector2(16, 4)
+
+[node name="ProyektilBos" type="Area2D" unique_id=928089231]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_oy7gg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1719168065]
+shape = SubResource("RectangleShape2D_oy7gg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=927277211]
+texture = ExtResource("1_uactg")
