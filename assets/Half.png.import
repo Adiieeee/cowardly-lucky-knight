@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://behnpe1cd5yl5"
-path="res://.godot/imported/Half Health.png-d20637e90dcb24e9e4e6aeb7d0684ab8.ctex"
+uid="uid://v7x7ukghwcv"
+path="res://.godot/imported/Half.png-7f43891dde6af959ceb04449c59d8ef5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Half Health.png"
-dest_files=["res://.godot/imported/Half Health.png-d20637e90dcb24e9e4e6aeb7d0684ab8.ctex"]
+source_file="res://assets/Half.png"
+dest_files=["res://.godot/imported/Half.png-7f43891dde6af959ceb04449c59d8ef5.ctex"]
 
 [params]
 

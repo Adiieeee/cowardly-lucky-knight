@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scenes/UI_Pemain.gd" id="1_uipemain"]
+[ext_resource type="Texture2D" uid="uid://dfkl2k31" path="res://assets/Full.png" id="2_full"]
+
+[node name="UI_Pemain" type="CanvasLayer"]
+script = ExtResource("1_uipemain")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 320.0
+offset_bottom = 80.0
+theme_override_constants/separation = 5
+
+[node name="Hearth1" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_full")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Hearth2" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_full")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Hearth3" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_full")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Hearth4" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_full")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Hearth5" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_full")
+expand_mode = 2
+stretch_mode = 5

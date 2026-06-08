@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cvy0jelrk42gq" path="res://assets/Final/Final/Background_0.png" id="8_nhv0k"]
 [ext_resource type="PackedScene" uid="uid://61gjdksbqk0j" path="res://scenes/Boss.tscn" id="9_l8gcr"]
 [ext_resource type="AudioStream" uid="uid://c00gfjpvx1oox" path="res://assets/00 - Egzod - Royalty.mp3" id="10_33y0x"]
+[ext_resource type="Script" path="res://scenes/BossRoom.gd" id="1_bossrm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_48qfw"]
 texture = ExtResource("2_6gfcs")
@@ -617,6 +618,7 @@ texture_region_size = Vector2i(32, 32)
 sources/0 = SubResource("TileSetAtlasSource_l8gcr")
 
 [node name="Boss Room" type="Node2D" unique_id=1204639354]
+script = ExtResource("1_bossrm")
 
 [node name="CharacterBody2D" parent="." unique_id=299147046 instance=ExtResource("1_rv6t8")]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de6mg44efaivo"
-path="res://.godot/imported/Drained Hearth.png-c30df96694a10905eb4bad6228461c37.ctex"
+uid="uid://8gsm3jabmftg"
+path="res://.godot/imported/Zero.png-8246f6e6196c247fbace3ff324c85e95.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Drained Hearth.png"
-dest_files=["res://.godot/imported/Drained Hearth.png-c30df96694a10905eb4bad6228461c37.ctex"]
+source_file="res://assets/Zero.png"
+dest_files=["res://.godot/imported/Zero.png-8246f6e6196c247fbace3ff324c85e95.ctex"]
 
 [params]
 

@@ -12,7 +12,8 @@ enum State {
 	ATTACK_RANGED,
 	TAUNT,
 	HURT,
-	DEAD
+	DEAD,
+	ALIVE
 }
 
 # --- EXPORT PARAMETERS ---
@@ -78,6 +79,8 @@ var combo_count: int = 0
 func _ready() -> void:
 	animasi_bos.animation_finished.connect(_pada_animasi_selesai)
 	waktu_jeda_serangan = 1.0  # Sedikit jeda di awal agar tidak langsung menyerang
+	state_saat_ini = State.ALIVE
+	animasi_bos.play("alive")
 
 func _physics_process(waktu_delta: float) -> void:
 	_kurangi_semua_timer(waktu_delta)
@@ -96,8 +99,8 @@ func _physics_process(waktu_delta: float) -> void:
 func _proses_state_machine(dt: float) -> void:
 	var pemain = get_tree().get_first_node_in_group("player")
 
-	# State DEAD dan HURT tidak butuh pemain
-	if state_saat_ini == State.DEAD:
+	# State DEAD, HURT, dan ALIVE tidak butuh pemain
+	if state_saat_ini == State.DEAD or state_saat_ini == State.ALIVE:
 		velocity.x = 0
 		return
 
@@ -311,7 +314,7 @@ func _jalankan_serangan_jauh() -> void:
 	_perbarui_posisi_area_serang()
 	animasi_bos.play("longattack")
 
-	await get_tree().create_timer(0.6).timeout
+	await get_tree().create_timer(0.3).timeout
 
 	if status_mati or sedang_terluka or state_saat_ini != State.ATTACK_RANGED:
 		return
@@ -457,6 +460,8 @@ func _pada_animasi_selesai() -> void:
 		return
 
 	match animasi_bos.animation:
+		"alive":
+			_ubah_state(State.PATROL)
 		"hurt":
 			sedang_terluka = false
 			_ubah_state(State.CHASE)

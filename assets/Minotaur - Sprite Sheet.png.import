@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://v4xuytagkjft"
-path="res://.godot/imported/Full Health.png-e30da36111bad03a98b537263210d8d7.ctex"
+uid="uid://c7xafid56pgc8"
+path="res://.godot/imported/Minotaur - Sprite Sheet.png-714100d3d54e40caca13910eb2ddecf1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Full Health.png"
-dest_files=["res://.godot/imported/Full Health.png-e30da36111bad03a98b537263210d8d7.ctex"]
+source_file="res://assets/Minotaur - Sprite Sheet.png"
+dest_files=["res://.godot/imported/Minotaur - Sprite Sheet.png-714100d3d54e40caca13910eb2ddecf1.ctex"]
 
 [params]
 

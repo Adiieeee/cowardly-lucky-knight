@@ -1,0 +1,18 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/proyektil_pemain.gd" id="1_oy7gg"]
+[ext_resource type="Texture2D" path="res://assets/SATYR_sprite_sheet/ProjectilePlayer.png" id="1_uactg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oy7gg"]
+size = Vector2(16, 16)
+
+[node name="ProyektilPemain" type="Area2D"]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource("1_oy7gg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_oy7gg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_uactg")
